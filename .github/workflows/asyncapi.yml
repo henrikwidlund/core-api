@@ -29,6 +29,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
 
       - name: Validate websocket-api
         uses: WaleedAshraf/asyncapi-github-action@d31f1627ac7c24132e7c4e4b89948d43b619685a # v0.0.10
